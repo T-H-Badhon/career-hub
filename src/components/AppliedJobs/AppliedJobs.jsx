@@ -10,8 +10,6 @@ const AppliedJobs = () => {
 
     useEffect(()=>{
         const newJobs=[];
-        console.log(ids)
-        console.log(jobData)
         if(!ids){
             setJobs(newJobs)
         }
@@ -28,7 +26,7 @@ const AppliedJobs = () => {
         <div className='container mx-auto'>
             <h1 className='text-6xl text-center my-10'>Applied Jobs</h1>
             {
-                jobs.map(job=> <JobItem job={job} ssM={'flex justify-start items-center my-5'} ssAll={'mx-5'} ssG={'grow'} > </JobItem> )
+                jobs.map(job=> <JobItem key={job.id} job={job} ssM={'flex justify-start items-center my-5'} ssAll={'mx-5'} ssG={'grow'} > </JobItem> )
             }
             
         </div>
