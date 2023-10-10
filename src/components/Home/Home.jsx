@@ -7,7 +7,7 @@ import { JobsContext } from '../Layout/Layout';
 const Home = () => {
     return (
         <div>
-            <div className='flex justify-between items-center mb-10'>
+            <div className='container mx-auto flex justify-between items-center mb-10'>
                 <div>
                     <div className='mb-5'>
                         <h1 className='text-6xl mb-5'>One Step Closer To Your <span className='text-violet-500'>Dream Job</span></h1>

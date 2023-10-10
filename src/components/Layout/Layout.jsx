@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../Header/Header';
 import { Outlet, useLoaderData } from 'react-router-dom';
 import { createContext } from 'react';
+import Footer from '../Footer/Footer';
 
 export const JobsContext = createContext([]);
 
@@ -16,6 +17,7 @@ const Layout = () => {
             <JobsContext.Provider value={jobs}>
                 <Outlet></Outlet>
             </JobsContext.Provider>
+            <Footer></Footer>
         </div>
     );
 };

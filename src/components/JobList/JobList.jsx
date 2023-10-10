@@ -10,7 +10,7 @@ const JobList = () => {
     },[])
 
     return (
-        <div className='my-20'>
+        <div className='container mx-auto my-20'>
             <h1 className='text-6xl mb-5 text-violet-500 text-center'>Job Category List</h1>
             <p className='text-center'>Explore thousands of job opportunities with all the information you need. Its your future</p>
             <div className='grid grid-cols-4 gap-5 mt-4'>
