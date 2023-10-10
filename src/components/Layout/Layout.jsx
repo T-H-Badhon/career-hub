@@ -7,8 +7,7 @@ import Footer from '../Footer/Footer';
 export const JobsContext = createContext([]);
 
 const Layout = () => {
-    const loaderData=useLoaderData();
-    const jobs=loaderData;
+    const jobs=useLoaderData();
     
 
     return (

@@ -8,6 +8,8 @@ import {
 } from "react-router-dom";
 import Layout from './components/Layout/Layout.jsx';
 import Home from './components/Home/Home.jsx';
+import JobDetails from './components/JobDetails/JobDetails.jsx';
+import AppliedJobs from './components/AppliedJobs/AppliedJobs.jsx';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +20,15 @@ const router = createBrowserRouter([
       {
         path:'/',
         element: <Home></Home>
+      },
+      {
+        path: ':jobId',
+        element: <JobDetails></JobDetails>,
+        loader: ({params})=> params.jobId
+      },
+      {
+        path: 'applied',
+        element: <AppliedJobs></AppliedJobs>
       }
     ]
   },
