@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import user from '../../assets/images/user.png'
 import JobList from '../JobList/JobList';
 import FeaturedJob from '../FeaturedJob/FeaturedJob';
+import { JobsContext } from '../Layout/Layout';
 
 const Home = () => {
     return (

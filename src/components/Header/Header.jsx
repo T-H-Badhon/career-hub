@@ -4,7 +4,7 @@ import logo from '../../assets/logo/CareerHub.png'
 
 const Header = () => {
     return (
-        <div className='flex justify-between items-center px-7 bg-slate-700 py-5 text-white rounded-lg mb-10'>
+        <div className='flex justify-between items-center px-7 bg-indigo-300 py-5 text-white rounded-lg mb-10'>
             <div>
                 <Link to='/'><img className='bg-white px-1 py-1 rounded-sm' src={logo} alt="" /></Link>
             </div>
